@@ -15,12 +15,12 @@ that uses algebraic connectivity. Specific questions I've gotten include:
 I want to embrace that there can be many answers to these questions, but I need
 a starting point. In the past, explanations I've given for these questions have
 been centered around the relationship between algebraic connectivity and the
-problem of finding minimum cuts of a graph. This is something I knew I read
-about somewhere and always made sense to me in a hand-wavy
-conference-hallway-chat way, but I don't think I could have sat down and worked
-through the math. Somehow, to me at least, there is something more intuitive
-about a combinatorial idea (minimum cuts) than an algebraic one. This will be my
-jumping off point.
+problem of finding minimum cuts of a graph. Somehow, to me at least, there is
+something more intuitive about a combinatorial idea (minimum cuts) than an
+algebraic one (graph Laplacian eigenvalues). This link to minimum cuts is
+something I read about somewhere and always made sense to me in a
+hand-wavy conference-hallway-chat way, but I don't think I could have sat down
+and worked through the math. This will be my jumping off point.
 
 ## From graph cuts to connectivity
 
@@ -29,6 +29,6 @@ minimum cuts is that there are many variants of the minimum cut problem. The
 most common flavor of minimum cut I've run into in my explorations is the
 *normalized cut*, which, if you start digging, you'll find is related to the
 spectral properties of the *normalized* graph Laplacian (the usual combinatorial
-graph Laplacian, but normalized so that the diagonal elements are all 1). I
-might revisit this in the future, but for now, the specific minimum cuts that
-are most interesting to me are called *ratio cuts*.
+graph Laplacian, but normalized so that the diagonal elements are all equal to
+one). I might revisit this in the future, but for now, the specific minimum cuts
+that are most interesting to me are called *ratio cuts*.
